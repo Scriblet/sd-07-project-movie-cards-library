@@ -20,7 +20,7 @@ class MovieList extends Component {
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(
     PropTypes.shape({
-      title: PropTypes.string,
+      title: PropTypes.string.isRequired,
     })
   ),
 };

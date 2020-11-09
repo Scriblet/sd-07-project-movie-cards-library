@@ -1,3 +1,4 @@
+import { prototype } from 'enzyme-adapter-react-16';
 import React, { Component } from 'react';
 import Rating from './Rating';
 
@@ -15,5 +16,15 @@ class MovieCard extends Component {
     );
   }
 }
+
+MovieCard.propTypes = {
+    movies: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline:PropTypes.string,
+    image: PropTypes.string,
+    rating: PropTypes.number,
+  })
+};
 
 export default MovieCard;

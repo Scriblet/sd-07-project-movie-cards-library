@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
+import movieDefault from '../movieDefault';
 
 class MovieList extends React.Component {
   render() {
@@ -13,17 +14,21 @@ class MovieList extends React.Component {
   }
 }
 
-
-MovieCard.propTypes = {
+MovieList.propTypes = {
   movies: PropTypes.arrayOf(
-    PropTypes.exact({
-      title: PropTypes.string,
-      subtitle: PropTypes.string,
-      imagePath: PropTypes.string,
-      storyline: PropTypes.string,
-      rating: PropTypes.number,
-    }),
-  ),
+    movieDefault,
+  ).isRequired,
 };
+
+MovieCard.defaultProps = {
+  movie: {
+    title: 'Title',
+    subtitle: 'Subtitle',
+    imagePath: 'Image Path',
+    storyline: 'Storyline',
+    rating: 0,
+  },
+};
+
 
 export default MovieList;

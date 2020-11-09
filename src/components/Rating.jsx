@@ -2,17 +2,13 @@ import React from 'react';
 import RatinigNote from '../data.js';
 
 function getNota(title) {
-  return RatinigNote.map((note) => {
-    if (note.title === title) {
-      return note.rating;
-    }
-  });
+  return RatinigNote.map((note) => (note.title === title ? note.rating : 'não encontrado'));
 }
 
 class Rating extends React.Component {
   render() {
     return (
-      <div className='rating'>
+      <div className="rating">
         <p> {getNota('Kingsglaive')}</p>
       </div>
     );

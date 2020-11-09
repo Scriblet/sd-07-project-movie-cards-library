@@ -4,9 +4,14 @@ class MovieCard extends Component {
   render() {
     return (
       <div>
-        <h1>testando</h1>
+          <img src={this.props.imagePath}></img>
+        <h1>{this.props.title}</h1>
+        <h3>{this.props.subtitle}</h3>
+        <p>{this.props.storyline}</p>
+        
       </div>
     );
   }
 }
+
 export default MovieCard;

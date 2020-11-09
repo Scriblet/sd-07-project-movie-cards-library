@@ -5,13 +5,13 @@ class Header extends React.Component {
   render() {
     return (
       <header className="movie-card-header">
-      <h1 className='page-title' >{ this.props.title }</h1>
+        <h1 className="page-title" >{ this.props.title }</h1>
       </header>
     );
   }
 }
 
-Header.propTypes = { title: props.title };
-Header.defaulProps = { title: 'Movie cards Library'};
+Header.propTypes = { title: props.string };
+Header.defaulProps = { title: "Movie cards Library"};
 
 export default Header;

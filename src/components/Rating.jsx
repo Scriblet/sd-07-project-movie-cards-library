@@ -1,7 +1,4 @@
 import React from "react";
-
-export class Rating extends React.Component {
-  render () {
-  return <h1>{this.props.children}</h1>;
-  }
-}
+export default class Rating extends React.Component {
+  render = () => <span className='movie-card-rating'>{this.props.rating}</span>
+};

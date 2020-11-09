@@ -1,7 +1,12 @@
 import React from "react";
+import MovieCard from './MovieCard.jsx';
 
-export class MovieList extends React.Component {
-  render () {
-  return <h1>{this.props.children}</h1>;
-  }
-}
+export default class MovieList extends React.Component {
+  getMovies = () => this.props.children
+    .map(movie => <MovieCard>{movie}</MovieCard>)
+
+  
+  render = () => <section  className='movie-list'>
+    {this.getMovies()}
+  </section>
+};

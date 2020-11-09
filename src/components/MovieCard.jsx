@@ -20,8 +20,6 @@ class MovieCard extends React.Component {
   }
 }
 
-export default MovieCard;
-
 MovieCard.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string,
@@ -33,3 +31,5 @@ MovieCard.propTypes = {
 };
 
 MovieCard.defaultProps = { movie: {} };
+
+export default MovieCard;

@@ -1,13 +1,12 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import '../styles/components/header.css';
 
 class Header extends React.Component {
   render() {
     const { title } = this.props;
     return (
-      <header className="header">
-        <h1>{title}</h1>
+      <header className="movie-card-header">
+        <h1 className="page-title">{title}</h1>
       </header>
     );
   }

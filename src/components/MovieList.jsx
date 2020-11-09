@@ -8,7 +8,7 @@ class MovieList extends Component {
     return (
       <main>
         <div>
-           <MovieCard />
+          <MovieCard />
         </div>
       </main>
     );

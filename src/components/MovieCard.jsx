@@ -1,4 +1,5 @@
 import React from 'react';
+import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
@@ -8,7 +9,8 @@ class MovieCard extends React.Component {
         <h4>{title}</h4>
         <h5>{subtitle}</h5>
         <p>{storyline}</p>
-        <img src={imagePath} alt='Films card image' />
+        <img src={imagePath} alt='Films image card' />
+        <Rating rating={rating} />
       </div>
     );
   }

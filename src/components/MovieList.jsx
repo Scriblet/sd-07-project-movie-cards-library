@@ -12,7 +12,7 @@ class MovieList extends React.Component {
   }
 }
 
-MovieList.propTypes = { movies: PropTypes.array.isRequired };
+MovieList.propTypes = { movies: PropTypes.arrayOf.isRequired };
 
 MovieList.defaultProps = {
   movies: [{

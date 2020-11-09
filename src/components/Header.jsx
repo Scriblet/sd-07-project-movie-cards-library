@@ -1,6 +1,4 @@
 import React from 'react';
-import propTypes from 'prop-types';
-
 
 class Header extends React.Component {
   render() {

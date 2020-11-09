@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Rating from './Rating.jsx';
 
 export default class MovieCard extends React.Component {

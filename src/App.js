@@ -1,21 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
-import movies from './data';
-import PropTypes from 'prop-types';
+import Movies from './data';
 
 function App() {
   return (
     <div className="App">
-    <div className="movie-card-header">
-      <Header />
+      <div className="movie-card-header">
+        <Header />
       </div>
-      <MovieList className="movie-list" movies={movies} />
+      <MovieList className="movie-list" movies={Movies} />
     </div>
   );
 }
-
-App.propTypes = { movies: PropTypes.arrayOf() };
 
 export default App;

@@ -1,4 +1,4 @@
-version: "2"         # required to adjust maintainability checks
+version: '2' # required to adjust maintainability checks
 checks:
   argument-count:
     config:
@@ -31,9 +31,10 @@ checks:
     config:
       threshold: # language-specific defaults. an override will affect all languages.
 exclude_patterns:
-- "src/App.test.js"
-- "src/serviceWorker.js"
-- "src/index.css"
+  - 'src/App.test.js'
+  - 'src/serviceWorker.js'
+  - 'src/index.css'
+  - '**/node_modules'
 plugins:
   csslint:
     enabled: true
@@ -43,7 +44,7 @@ plugins:
       fallback-colors:
         enabled: false
       box-model:
-          enabled: false
+        enabled: false
   eslint:
     enabled: true
     config:

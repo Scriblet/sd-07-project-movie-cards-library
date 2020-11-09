@@ -8,9 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="movie-list">
-        {movies.map(movie => <MovieList  movies={movie}/>)}
-      </div>
+      <MovieList movies={movies} />
     </div>
   );
 }

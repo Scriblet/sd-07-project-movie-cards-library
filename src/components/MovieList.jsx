@@ -6,7 +6,7 @@ class MovieList extends React.Component {
   render() {
     return (
       <div className="movie-list">
-        {Movies.map((movie) => (<MovieCard movie={movie} />))}
+        {Movies.map((movie, index) => (<MovieCard key={index} movie={movie} />))}
       </div>
     );
   }

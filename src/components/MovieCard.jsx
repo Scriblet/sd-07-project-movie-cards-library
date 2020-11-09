@@ -1,6 +1,6 @@
 import React from 'react';
-import Rating from './Rating';
 import PropTypes from 'prop-types';
+import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
@@ -20,7 +20,8 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.prototype = {
-  movie: PropTypes.object
-}
+  movie: PropTypes.number,
+};
+
 
 export default MovieCard;

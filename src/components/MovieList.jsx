@@ -34,7 +34,7 @@ MovieList.defaultProps = {
       title: '',
       subtitle: '',
       storyline: '',
-      rating: '',
+      rating: 0,
       imagePath: '',
     },
   ],

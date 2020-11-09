@@ -2,7 +2,7 @@ import React from 'react';
 import Rating from './Rating.jsx';
 
 export default class MovieCard extends React.Component {
-  getMovieElement = () => {
+  getMovieElement() {
     const {title, imagePath, subtitle, storyline, rating} = this.props.children;
     return (
     <div className='movie-card'>

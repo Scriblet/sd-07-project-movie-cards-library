@@ -56,7 +56,7 @@ describe('<MovieList /> component', () => {
     expect(wrapper.find(MovieCard).length).toEqual(3);
   });
 
-  it.skip('sets the movie title as the key in each rendered `MovieCard`', () => {
+  it('sets the movie title as the key in each rendered `MovieCard`', () => {
     wrapper = mount(<MovieList movies={movies} />);
     const movieCards = wrapper.find(MovieCard);
 
@@ -69,17 +69,17 @@ describe('<MovieList /> component', () => {
 describe('<MovieCard /> component', () => {
   const movie = movies[0];
 
-  it.skip('renders without crashing', () => {
+  it('renders without crashing', () => {
     shallow(<MovieCard movie={movie} />);
   });
 
-  it.skip('renders the movie image inside an `image` tag', () => {
+  it('renders the movie image inside an `image` tag', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('img').prop('src')).toEqual('images/movie_1');
   });
 
-  it.skip('renders the movie title inside an `h4` tag', () => {
+  it('renders the movie title inside an `h4` tag', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('h4').text()).toBe('Movie Title 1');

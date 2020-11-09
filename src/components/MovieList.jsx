@@ -1,14 +1,18 @@
 // implement MovieList component here
 // implement Header component here
 import React from 'react';
-import MovieCard from './MovieCard.jsx'
+import PropTypes from 'prop-types';
+import MovieCard from './MovieCard.jsx';
 
 class MovieList extends React.Component {
   render() {
     return (
-        this.props.movies.map(movie => <MovieCard key={movie.name}/>)
+      <div className="movie-list">
+        {this.props.movies.map((movie) => (<MovieCard key={movie.title} movie={movie} />))}
+      </div>
     );
   }
 }
 
+MovieList.propTypes = { movies: PropTypes.arrayOf(PropTypes.object).isRequired };
 export default MovieList;

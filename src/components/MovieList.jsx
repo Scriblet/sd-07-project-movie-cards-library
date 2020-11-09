@@ -1,13 +1,13 @@
 import React from 'react';
 
 class MovieList extends React.Component {
-  render () {
+  render() {
     return (
       <div>
-          Teste
-          {console.log(this.props)}
+        Teste
+        {console.log(this.props)}
       </div>
-    )
+    );
   }
 }
 

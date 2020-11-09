@@ -8,7 +8,7 @@ const App = () => (
   <div className="App">
     <Header>Movie Cards Library</Header>
     <MovieList>{movies}</MovieList>
-   </div>
+  </div>
 );
 
 export default App;

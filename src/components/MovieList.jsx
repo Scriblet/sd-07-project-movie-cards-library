@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-// import movies from '../data';
+import movies from '../data';
 
 class MovieList extends Component {
   render() {
-    const { movies } = this.props;
     return (
       <div className="movieList">
-        <p>{movies}</p>
+        {movies.map(movie => <div key={movie.title}>{movie.title}</div>)}
       </div>
     );
   }

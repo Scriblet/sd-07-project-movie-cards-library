@@ -19,24 +19,34 @@ body {
   text-align: center;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 1180px;
   padding: 48px 30px;
+}
+
+.movie-card2 {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 3px;
 }
 
 .movie-card {
   background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
   display: flex;
   flex-direction: column;
   height: 450px;
-  margin: 5px;
+  justify-content: space-between;
+  margin: 10px;
+  max-width: 30%;
   overflow: hidden;
-  width: 300px;
 }
-
 
 .movie-card-image {
   width: 100%;

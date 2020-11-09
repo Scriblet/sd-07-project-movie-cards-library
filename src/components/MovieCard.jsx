@@ -2,9 +2,9 @@
 import React from 'react';
 
 class MovieCard extends React.Component {
-    render() {
-        return;
-    }
+  render() {
+    return <div />;
+  }
 }
 
 export default MovieCard;

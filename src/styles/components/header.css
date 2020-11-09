@@ -1,8 +1,5 @@
 .header {
-    text-align: center;
-    background-color: #000000;
-}
-
-.header h1 {
-    color: blanchedalmond;
+  background-color: grey;
+  color: blanchedalmond;
+  text-align: center;
 }

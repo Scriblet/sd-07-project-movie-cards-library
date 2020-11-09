@@ -16,5 +16,7 @@ export default class MovieCard extends React.Component {
     </div>
     )
   }
-  render = () => this.getMovieElement();
+  render() {
+    return this.getMovieElement()
+  }
 };

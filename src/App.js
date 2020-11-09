@@ -6,7 +6,7 @@ import movies from './data';
 
 const App = () => (
   <div className="App">
-    <Header>Movie Cards Library</Header>
+    <Header/>
     <MovieList>{movies}</MovieList>
   </div>
 );

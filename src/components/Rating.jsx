@@ -8,7 +8,7 @@ class Rating extends Component {
       <div className="movie-card-rating">
           Rating
           <p className="rating">{rating}</p>
-        </div>
+      </div>
     );
   }
   }

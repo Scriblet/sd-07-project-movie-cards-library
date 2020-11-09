@@ -8,8 +8,6 @@ class MovieList extends React.Component {
   }
 }
 
-MovieList.propTypes = {
-  movies: PropTypes.array
-}
+MovieList.propTypes = { movies: PropTypes.arrayOf(PropType.object).isRequired };
 
 export default MovieList;

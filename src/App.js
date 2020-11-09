@@ -7,7 +7,7 @@ function App() {
   const moviesArray = movies;
   return (
     <div className="App">
-      <MovieList movies = { moviesArray } />;
+      <MovieList movies={moviesArray} />;
     </div>
   );
 }

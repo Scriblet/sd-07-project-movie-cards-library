@@ -5,8 +5,8 @@ import MovieList from './MovieList';
 
 
 class App extends React.Component {
-  render(){
-  return (
+  render() {
+    return (
     <div className="App">
       <Header />
        <MovieList />

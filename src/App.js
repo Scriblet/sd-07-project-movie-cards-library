@@ -1,5 +1,4 @@
 import React from 'react';
-import propTypes from 'prop-types';
 import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';

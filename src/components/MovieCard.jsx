@@ -5,4 +5,4 @@ import React from 'react';
 class MovieCard extends React.Component {
 }
 
-export default Header;
+export default MovieCard;

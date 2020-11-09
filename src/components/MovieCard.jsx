@@ -16,7 +16,7 @@ class MovieCard extends React.Component {
                     <Rating rating={rating}/>
                 </div>
             </div>
-        )
+        );
     }
 }
 

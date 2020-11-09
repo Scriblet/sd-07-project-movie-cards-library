@@ -6,11 +6,11 @@ import MovieCard from './MovieCard';
 class MovieList extends Component {
   render() {
     return (
-        <main>
-          <div>
-            <MovieCard />
-          </div>
-        </main>
+      <main>
+        <div>
+           <MovieCard />
+        </div>
+      </main>
     );
   }
 }

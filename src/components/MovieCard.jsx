@@ -19,7 +19,7 @@ class MovieCard extends React.Component {
   }
 }
 
-MovieCard.prototype = { movie: PropTypes.number };
+MovieCard.protoType = { movie: PropTypes.object };
 
 
 export default MovieCard;

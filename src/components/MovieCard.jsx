@@ -1,4 +1,4 @@
-import { prototype } from 'enzyme-adapter-react-16';
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Rating from './Rating';
 

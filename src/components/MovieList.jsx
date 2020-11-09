@@ -13,7 +13,9 @@ class MovieList extends Component {
 }
 
 MovieList.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.shape({ title: PropTypes.string })).isRequired,
+  movies: PropTypes.arrayOf(
+    PropTypes.shape({ title: PropTypes.string }),
+  ).isRequired,
 };
 
 MovieList.defaultProps = {};

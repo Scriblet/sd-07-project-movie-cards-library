@@ -14,8 +14,6 @@ class Rating extends React.Component {
 
 export default Rating;
 
-Rating.propTypes = {
-  rating: propTypes.number
-}
+Rating.propTypes = { rating: propTypes.number };
 
-Rating.defaultProps = { rating: null}
+Rating.defaultProps = { rating: null };

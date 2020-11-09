@@ -27,6 +27,6 @@ MovieList.propTypes = {
   ),
 };
 
-MovieList.propTypes = {
+MovieList.defaultProps = {
   movies: []
 }

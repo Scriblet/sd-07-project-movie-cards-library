@@ -24,3 +24,12 @@ yarn-error.log*
 
 # VSCode repo settings
 .vscode
+package.json
+package-lock.json
+all-green.png
+failing-test.png
+first-green-test.png
+orange-circle.png
+preview.png
+site-outline.png
+skipped-test.png

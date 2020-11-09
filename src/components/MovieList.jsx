@@ -1,1 +1,15 @@
-// implement MovieList component here
+import React from 'react';
+import MovieCard from './MovieCard.jsx';
+
+class MovieList extends React.Component {
+  render () {
+    const moviesArr = this.props.movies;
+    return (
+      <main>
+        {moviesArr.map(card => <MovieCard key={card.title} movie={card} />)}
+      </main>
+    );
+  }
+}
+
+export default MovieList;

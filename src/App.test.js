@@ -73,26 +73,26 @@ describe('<MovieCard /> component', () => {
     shallow(<MovieCard movie={movie} />);
   });
 
-  it.skip('renders the movie image inside an `image` tag', () => {
+  it('renders the movie image inside an `image` tag', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('img').prop('src')).toEqual('images/movie_1');
   });
 
-  it.skip('renders the movie title inside an `h4` tag', () => {
+  it('renders the movie title inside an `h4` tag', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('h4').text()).toBe('Movie Title 1');
   });
 
-  it.skip('renders the movie subtitle inside an `h5` tag', () => {
+  it('renders the movie subtitle inside an `h5` tag', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('h5').text()).toBe('Movie Subtitle 1');
   });
 
 
-  it.skip('renders the movie storyline inside a `p` tag', () => {
+  it('renders the movie storyline inside a `p` tag', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('p').text()).toBe('Movie Storyline 1');

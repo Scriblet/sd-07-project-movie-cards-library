@@ -4,12 +4,11 @@ import Header from './components/Header.jsx';
 import MovieList from './components/MovieList';
 // import movies from './data';
 
-
 function App() {
   return (
     <div className="App">
-    <Header />      
-    <MovieList />
+      <Header />
+      <MovieList /> 
     </div>
   );
 }

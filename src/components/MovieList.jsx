@@ -28,4 +28,16 @@ MovieList.propTypes = {
   ),
 };
 
+MovieList.defaultProps = {
+  movies: [
+    {
+      title: '',
+      subtitle: '',
+      storyline: '',
+      rating: '',
+      imagePath: '',
+    },
+  ],
+};
+
 export default MovieList;

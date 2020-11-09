@@ -7,9 +7,9 @@ class MovieList extends Component {
     render() {
       return (
         <main>
-            <div>
-                <MovieCard />
-            </div>
+          <div>
+            <MovieCard />
+          </div>
         </main>
       );
     }

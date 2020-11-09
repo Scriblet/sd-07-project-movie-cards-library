@@ -69,11 +69,11 @@ describe('<MovieList /> component', () => {
 describe('<MovieCard /> component', () => {
   const movie = movies[0];
 
-  it.skip('renders without crashing', () => {
+  it('renders without crashing', () => {
     shallow(<MovieCard movie={movie} />);
   });
 
-  it.skip('renders the movie image inside an `image` tag', () => {
+  it('renders the movie image inside an `image` tag', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('img').prop('src')).toEqual('images/movie_1');

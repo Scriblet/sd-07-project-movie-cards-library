@@ -7,11 +7,11 @@ import MovieList from './MovieList';
 class App extends React.Component {
   render() {
     return (
-    <div className="App">
-      <Header />
-       <MovieList />
-    </div>
-  );
+      <div className="App">
+        <Header />
+        <MovieList />
+      </div>
+    );
   }
 }
 

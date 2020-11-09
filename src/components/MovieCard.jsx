@@ -4,8 +4,7 @@ import Movies from '../data.js';
 
 class MovieCard extends React.Component {
   render() {
-    return Movies.map((movies) => {
-      return (
+    return Movies.map((movies) => 
         <div className="movie-card">
           <h4 className="movie-card-title">{movies.title}</h4>
           <h5 className="movie-card-subtitle">{movies.subtitle}</h5>
@@ -19,8 +18,7 @@ class MovieCard extends React.Component {
             <Rating />
           </p>
         </div>
-      );
-    });
+     );
   }
 }
 

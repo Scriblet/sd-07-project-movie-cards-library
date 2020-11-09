@@ -2,9 +2,9 @@ import React from 'react';
 
 class MovieList extends React.Component {
   render() {
-   return (<div>
+    return (<div>
      {this.props.movie}
-   </div>)
+   </div>);
   }
 }
 

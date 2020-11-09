@@ -5,12 +5,11 @@ import Header from './components/Header.jsx';
 import MovieList from './components/MovieList';
 
 class App extends React.Component {
-  render () {
-
+  render() {
     return (
       <div className="App">
         <Header />
-        <MovieList movies={movies}/>
+        <MovieList movies={movies} />
       </div>
     );
   }

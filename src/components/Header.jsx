@@ -1,15 +1,16 @@
 // implement Header component here
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 
 class Header extends React.Component {
   render() {
-    return(
+    return (
       <header>
         <h1>Movie Cards Library</h1>
       </header>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;

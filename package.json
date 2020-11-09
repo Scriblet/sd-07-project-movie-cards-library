@@ -36,5 +36,17 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1"
-  }
+  },
+  "description": "Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀",
+  "main": "[",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryber/sd-07-project-movie-cards-library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tryber/sd-07-project-movie-cards-library/issues"
+  },
+  "homepage": "https://github.com/tryber/sd-07-project-movie-cards-library#readme"
 }

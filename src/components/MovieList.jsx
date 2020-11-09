@@ -3,16 +3,17 @@ import MovieCard from './MovieCard';
 
 
 class MovieList extends Component {
-  render() {
+    render() {
     return (
       <main>
         <div>
-            {this.props.movies.map((movie) => < MovieCard 
-            title={movie.title}
-            subtitle={movie.subtitle}
-            storyline={movie.storyline}
-            rating={movie.rating}
-            imagePath={movie.imagePath }/>)}
+            {this.props.movies.map(({title, subtitle, storyline, rating, imagePath }, index) => < MovieCard
+            key={index}
+            title={title}
+            subtitle={subtitle}
+            storyline={storyline}
+            rating={rating}
+            imagePath={imagePath }/>)}
         </div>
       </main>
     );

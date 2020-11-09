@@ -9,7 +9,7 @@ import MovieCard from './components/MovieCard';
 function App() {
   return (
     <div className="App">
-      <Header title={<h1 className="page-title"> Movie Cards Library </h1>} />
+      <Header />
       <MovieList
         movies={
           DataVideo.map((acc) => <MovieCard movies={acc} key={acc.title} />)

@@ -11,18 +11,18 @@ class MovieCard extends React.Component {
         <p>{storyline}</p>
         <img alt='' src={imagePath}></img>
       </div>
-)
+    );
   }
 }
 
 MovieCard.propTypes = {
   movies: PropTypes.shape({
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  storyline:PropTypes.string,
-  image: PropTypes.string,
-  rating: PropTypes.number,
-})
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    image: PropTypes.string,
+    rating: PropTypes.number,
+  }),
 };
 
 export default MovieCard;

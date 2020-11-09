@@ -9,12 +9,10 @@ function App() {
     <div className="App">
       <Header />
       <div className="movie-list">
-        {movies.map(movie => <MovieList  movies={movie} />)}
+        {movies.map(movie => <MovieList  movies={movie}/>)}
       </div>
     </div>
   );
 }
 
 export default App;
-
-// {pokemons.map(pokemon => <Pokedex pokemons={pokemon} />)}

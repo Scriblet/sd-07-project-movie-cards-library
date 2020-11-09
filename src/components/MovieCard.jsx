@@ -21,11 +21,11 @@ export default MovieCard;
 
 MovieCard.propTypes = {
   movie: propTypes.shape({
-    imagePath: propTypes.string,
     title: propTypes.string,
-    rating: propTypes.number,
     subtitle: propTypes.string,
     storyline: propTypes.string,
+    rating: propTypes.number,
+    imagePath: propTypes.string,  
   }),
 };
 

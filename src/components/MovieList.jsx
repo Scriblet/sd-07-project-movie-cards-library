@@ -26,3 +26,7 @@ MovieList.propTypes = {
     }),
   ),
 };
+
+MovieList.propTypes = {
+  movies: []
+}

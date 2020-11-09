@@ -8,9 +8,7 @@ class Rating extends React.Component {
   }
 }
 
-Rating.protoType = {
-    rating: propTypes.element,
-}
+Rating.protoType = {rating: propTypes.number};
 
 
 export default Rating;

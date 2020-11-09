@@ -20,7 +20,7 @@ MovieList.propTypes = {
     storyline: PropTypes.string,
     rating: PropTypes.number,
     imagePath: PropTypes.string,
-  }))
+  })).isRequired
 }
 
 export default MovieList;

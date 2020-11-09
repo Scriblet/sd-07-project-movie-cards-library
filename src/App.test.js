@@ -50,13 +50,13 @@ describe('<MovieList /> component', () => {
     shallow(<MovieList movies={movies} />);
   });
 
-  it.skip('renders a `MovieCard` component for each object in the array', () => {
+  it('renders a `MovieCard` component for each object in the array', () => {
     wrapper = shallow(<MovieList movies={movies} />);
 
     expect(wrapper.find(MovieCard).length).toEqual(3);
   });
 
-  it.skip('sets the movie title as the key in each rendered `MovieCard`', () => {
+  it('sets the movie title as the key in each rendered `MovieCard`', () => {
     wrapper = mount(<MovieList movies={movies} />);
     const movieCards = wrapper.find(MovieCard);
 
@@ -125,13 +125,13 @@ describe('<Rating /> component', () => {
 });
 
 describe('<App /> component', () => {
-  it.skip('renders a `Header` component', () => {
+  it('renders a `Header` component', () => {
     wrapper = shallow(<App />);
 
     expect(wrapper.find('Header').length).toEqual(1);
   });
 
-  it.skip('renders a `MovieList` component', () => {
+  it('renders a `MovieList` component', () => {
     expect(wrapper.find('MovieList').length).toEqual(1);
   });
 });

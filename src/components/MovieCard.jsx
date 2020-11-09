@@ -25,17 +25,17 @@ MovieCard.propTypes = {
     rating: PropTypes.number,
     imagePath: PropTypes.string,
     title: PropTypes.string,
-  }),
+  }).isRequired,
 };
 
-MovieCard.defaultProps = {
-  movie: {
-    title: '',
-    subtitle: '',
-    storyline: '',
-    rating: 0,
-    imagePath: '',
-  },
-};
+// MovieCard.defaultProps = {
+//   movie: {
+//     title: '',
+//     subtitle: '',
+//     storyline: '',
+//     rating: 0,
+//     imagePath: '',
+//   },
+// };
 
 export default MovieCard;

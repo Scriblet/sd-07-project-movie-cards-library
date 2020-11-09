@@ -98,13 +98,13 @@ describe('<MovieCard /> component', () => {
     expect(wrapper.find('p').text()).toBe('Movie Storyline 1');
   });
 
-  it.skip('renders a `Rating` component', () => {
+  it('renders a `Rating` component', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('Rating').length).toEqual(1);
   });
 
-  it.skip('passes the rating attribute to the `Rating` component', () => {
+  it('passes the rating attribute to the `Rating` component', () => {
     wrapper = mount(<MovieCard movie={movie} />);
     const starRating = wrapper.find(Rating);
 
@@ -113,11 +113,11 @@ describe('<MovieCard /> component', () => {
 });
 
 describe('<Rating /> component', () => {
-  it.skip('renders without crashing', () => {
+  it('renders without crashing', () => {
     shallow(<Rating />);
   });
 
-  it.skip('renders the rating inside an element with the class `rating`', () => {
+  it('renders the rating inside an element with the class `rating`', () => {
     wrapper = shallow(<Rating rating={3} />);
 
     expect(wrapper.find('.rating').text()).toEqual('3');
@@ -125,13 +125,13 @@ describe('<Rating /> component', () => {
 });
 
 describe('<App /> component', () => {
-  it.skip('renders a `Header` component', () => {
+  it('renders a `Header` component', () => {
     wrapper = shallow(<App />);
 
     expect(wrapper.find('Header').length).toEqual(1);
   });
 
-  it.skip('renders a `MovieList` component', () => {
+  it('renders a `MovieList` component', () => {
     expect(wrapper.find('MovieList').length).toEqual(1);
   });
 });

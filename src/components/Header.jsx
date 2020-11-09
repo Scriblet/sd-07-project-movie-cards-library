@@ -11,7 +11,7 @@ class Header extends React.Component {
   }
 }
 
-Header.propTypes = { title: props.string };
+Header.propTypes = { title: PropTypes.string };
 Header.defaulProps = { title: 'Movie cards Library' };
 
 export default Header;

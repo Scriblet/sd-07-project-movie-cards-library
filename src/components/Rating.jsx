@@ -6,5 +6,5 @@ class Rating extends Component {
     return <p className="rating">{this.props.rating}</p>;
   }
 }
-Rating.propTypes = { rating: PropTypes.number.isRequired };
+Rating.propTypes = { rating: PropTypes.number };
 export default Rating;

@@ -1,12 +1,18 @@
 body {
   background-color: whitesmoke;
   box-sizing: border-box;
+  color: black;
   font-size: 16px;
+}
+
+.structure {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .movie-card-header {
   align-items: center;
-  background-color: #343a40;
+  background-color: rgb(182, 179, 179);
   display: flex;
   height: 100px;
   justify-content: center;

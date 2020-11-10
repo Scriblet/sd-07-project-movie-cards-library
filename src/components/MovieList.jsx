@@ -6,7 +6,7 @@ export default class MovieList extends React.Component {
     const properties = this.props;
     return (<section className="movie-list">
       { properties.movies.map((movie) => (
-        <div key={movie.title}><MovieCard>{movie}</MovieCard></div>
+        <MovieCard key={movie.title}>{movie}</MovieCard>
       )) }
     </section>);
   }

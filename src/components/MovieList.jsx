@@ -12,8 +12,8 @@ class MovieList extends React.Component {
   }
 }
 
-// https://pt-br.reactjs.org/docs/typechecking-with-proptypes.html
-// oneOfType: an object that could be one of many types
-MovieList.propTypes = { movies: PropTypes.oneOfType.isRequired };
+// Auxílio: instrutor Thaydds
+const aux = PropTypes.shape({ title: PropTypes.string });
+MovieList.propTypes = { movies: PropTypes.arrayOf(aux).isRequired };
 
 export default MovieList;

@@ -3,24 +3,27 @@ import PropTypes from 'prop-types';
 
 class MovieCard extends Component {
   render() {
-    const { title, subtitle, storyline, rating, imagePath } = this.props;
+    const { title, subtitle, storyline, imagePath } = this.props.movie;
     return (
       <div className="movie-card-body">
         <img className="movie-card-image" src={imagePath} alt="movie thumbnail" />
         <h4 className="movie-card-title">{title}</h4>
-        <span className="movie-card-subtitle">{subtitle}</span>
-        <span className="movie-card-storyline">{storyline}</span>
-        <span className="rating">{rating}</span>
-      </div>);
+        <h5 className="movie-card-subtitle">{subtitle}</h5>
+        <p className="movie-card-storyline">{storyline}</p>
+      </div>
+    );
   }
 }
 
 MovieCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  storyline: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
-  imagePath: PropTypes.string.isRequired,
+  movie: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+  })),
 };
+
+MovieCard.defaultProps = { movie: [] };
 
 export default MovieCard;

@@ -4,14 +4,14 @@ import Movies from '../data.js';
 
 class MovieCard extends React.Component {
   render() {
-    return Movies.map((movies, index) => (
+    return Movies.map((movies) => (
       <div className="movie-card">
         <img className="movie-card-image" src={movies.imagePath} alt="Imagem" />
         <h4 className="movie-card-title">{movies.title}</h4>
         <h5 className="movie-card-subtitle">{movies.subtitle}</h5>
         <p className="movie-card-storyline">{movies.storyline}</p>
         <p className="movie-card-rating">
-          <Rating rating={movies.rating} index={index} />
+          <Rating rating={movies.rating} />
         </p>
       </div>
     ));

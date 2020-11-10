@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 class Rating extends React.Component {
   render() {
     const properties = this.props;
-    return <span className="rating">{ properties.rating }</span>;
+    const element = <span className="rating">{ properties.rating }</span>;
+    return element;
   }
 }
+
 Rating.propTypes = {
   properties: {
     rating: PropTypes.string.isRequired

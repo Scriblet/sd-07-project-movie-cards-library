@@ -9,9 +9,9 @@ function App() {
 		<div className="App">
 			<div>
 				<Header />
-				{/* The 'movies' props given to the MovieList component gets its
-				information from the data imported at the beginning of the file.
-				It's used internally in the MovieList component file. */}
+				{/* The 'movies' props gets its information from the data 
+				imported at the beginning of the file. It's used internally 
+				in the MovieList component file. */}
 				<MovieList movies={data} />
 			</div>
 		</div>

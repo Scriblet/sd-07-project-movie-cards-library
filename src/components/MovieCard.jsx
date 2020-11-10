@@ -1,6 +1,5 @@
 import React from 'react';
 import Rating from './Rating';
-import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
@@ -17,22 +16,6 @@ class MovieCard extends React.Component {
       </div>
     );
   }
-}
-
-MovieCard.propTypes = {
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    rating: PropTypes.number,
-    imagePath: PropTypes.string,
-};
-
-MovieCard.defaultProps = {
-    title: 'Era pra ter informações aqui',
-    subtitle: 'Era pra ter informações aqui',
-    storyline: 'Era pra ter informações aqui',
-    rating: 'Tinha um número aqui',
-    imagePath: 'Era pra ter informações aqui',
 };
 
 export default MovieCard;

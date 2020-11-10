@@ -6,7 +6,7 @@ export default class MovieCard extends React.Component {
     const properties = this.props;
     const obj = properties.prop;
     return (
-      <div className="movie-card" key={obj.key}>
+      <div className="movie-card" key={properties.key}>
         <img src={obj.imagePath} className="movie-card-image" alt={obj.title} />
         <div className="movie-card-budy">
           <h4 className="movie-card-title">{obj.title}</h4>

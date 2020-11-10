@@ -5,12 +5,12 @@ import React from 'react';
 import './App.css';
 
 function App() {
-	return (
-		<div className="App">
-			<Header />
+  return (
+    <div className="App">
+      <Header />
       <MovieList movies={Data} />
-		</div>
-	);
+    </div>
+  );
 }
 
 export default App;

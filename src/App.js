@@ -3,18 +3,12 @@ import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 import DataVideo from './data';
-import MovieCard from './components/MovieCard';
-
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList
-        movies={
-          DataVideo.map((acc) => <MovieCard movies={acc} key={acc.title} />)
-        }
-      />
+      <MovieList movies={DataVideo}/>
     </div>
   );
 }

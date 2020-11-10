@@ -1,4 +1,5 @@
 // implement MovieCard component here
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Rating from './Rating';
 
@@ -17,5 +18,14 @@ class MovieCard extends Component {
     );
   }
 }
+
+MovieCard.propTypes = {
+  movie: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  storyline: PropTypes.string.isRequired,
+  rating: PropTypes.string.isRequired,
+  imagePath: PropTypes.string.isRequired,
+};
 
 export default MovieCard;

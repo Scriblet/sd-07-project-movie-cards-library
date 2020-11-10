@@ -6,6 +6,7 @@ import movies from './data';
 
 function App() {
   return (
+  // reclama que body não pode ser uma child de uma div ... onde esta essa div?
     <body>
       <div className="App">
         <Header />

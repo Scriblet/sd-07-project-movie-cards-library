@@ -23,12 +23,15 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
-  movie: PropTypes.arrayOf(PropTypes.object).isRequired,
+  movie: PropTypes.string.isRequired,
+  // na doc. falou que existe o PropTypes.object e não dá warning, pq o CC reclama?
+  // https://pt-br.reactjs.org/docs/typechecking-with-proptypes.html
   // title: PropTypes.string.isRequired,
   // subtitle: PropTypes.string.isRequired,
   // storyline: PropTypes.string.isRequired,
   // rating: PropTypes.string.isRequired,
   // imagePath: PropTypes.string.isRequired,
+  // Podia fazer assim, 1 por 1?
 };
 
 export default MovieCard;

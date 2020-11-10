@@ -1,7 +1,7 @@
 // implement MovieCard component here
 
 import React from 'react';
-import movies from '../data';
+import movie from '../data';
 
 class MovieCard extends React.Component {
   render() {

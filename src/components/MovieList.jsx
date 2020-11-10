@@ -14,9 +14,11 @@ export default class MovieList extends React.Component {
 }
 
 MovieList.propTypes = {
-  imagePath: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  storyline: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
+  movies: {
+    imagePath: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+  }
 };

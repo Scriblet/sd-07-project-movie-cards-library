@@ -19,6 +19,6 @@ class MovieList extends React.Component {
       storyline: PropTypes.string,
       rating: PropTypes.number,
       imagePath: PropTypes.string,
-    })
+    }).isRequired
 
 export default MovieList;

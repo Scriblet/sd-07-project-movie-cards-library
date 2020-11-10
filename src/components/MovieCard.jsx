@@ -6,7 +6,6 @@ class MovieCard extends React.Component {
   render() {
     return (
       <section>
-        <p>Testing requirement 2 - Movie Card</p>
       </section>
     );
   }

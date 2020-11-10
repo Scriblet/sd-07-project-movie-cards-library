@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../App.css';
 
-  class Rating extends React.Component {
+class Rating extends React.Component {
   render() {
     const rank = this.props;
     return (
@@ -15,13 +15,10 @@ import '../App.css';
 }
 
 Rating.propTypes = {
-  rank: PropTypes.arrayOf(PropTypes.shape({
-    rating: PropTypes.number,
-  })),
+  rating: PropTypes.number,
 };
 
 Rating.defaultProps = {
-  rank: {},
   rating: 'number',
 };
 

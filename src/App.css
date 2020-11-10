@@ -34,7 +34,13 @@ body {
   height: 450px;
   margin: 5px;
   overflow: hidden;
+  transition: all 0.3s;
   width: 300px;
+}
+
+.movie-card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 

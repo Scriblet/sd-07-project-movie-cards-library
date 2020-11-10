@@ -1,11 +1,11 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React from 'react';
 import Rating from './Rating.jsx';
 
 export default class MovieCard extends React.Component {
   render() {
     const prop = this.props;
-    const element = (
+    return (
       <div className="movie-card">
         <img src={prop.imagePath} className="movie-card-image" alt={prop.title} />
         <div className="movie-card-budy">
@@ -16,6 +16,9 @@ export default class MovieCard extends React.Component {
         <div className="movie-card-rating"><Rating rating={prop.rating} /></div>
       </div>
     );
-    return element;
   }
 }
+
+MovieCard.propTypes = {
+  imagePath: PropTypes.string
+};

@@ -11,14 +11,16 @@ class MovieList extends Component {
     console.log(`Chegada da data no mavelist ${movies}`);
     return (<div className="movie-list">{
       movies.map((eachMovie) => <MovieCard key={eachMovie.title} movie={eachMovie} />)
-      // Porque aqui tinha que ser "key", não podia ser name?
+      // Porque aqui tinha que ser "key, não podia ser name? Não podia, é exclusivo do react
+      // Quando olhar a resposta?
     }</div>);
   }
 }
 
 MovieList.propTypes = { movies: PropTypes.arrayOf(PropTypes.object).isRequired };
 // Mas ele não é do tipo object? R: Sim
-// porque só foi com string? R: Porque não é só escrever "array"
+// porque só foi com string? R: Porque só escrever "array" é muito genérico, oq pode é:
+// number, string, array of alguma coisa e shapes para objects
 // tem que estar antes do export, provavelmente o export é a ultima coisa
 
 export default MovieList;

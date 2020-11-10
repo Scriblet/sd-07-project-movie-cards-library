@@ -23,14 +23,16 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
-  movie: PropTypes.string.isRequired,
-  // na doc. falou que existe o PropTypes.object e não dá warning, pq o CC reclama?
+  movie: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+    imagePath: PropTypes.string.isRequired,
+  }).isRequired,
+  // Na doc. existe o PropTypes.object e não dá warning. O CC só reclama pq é má prática
+  // as {} do shape que dizem que é objeto
   // https://pt-br.reactjs.org/docs/typechecking-with-proptypes.html
-  // title: PropTypes.string.isRequired,
-  // subtitle: PropTypes.string.isRequired,
-  // storyline: PropTypes.string.isRequired,
-  // rating: PropTypes.string.isRequired,
-  // imagePath: PropTypes.string.isRequired,
   // Podia fazer assim, 1 por 1?
 };
 

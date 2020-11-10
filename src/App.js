@@ -6,13 +6,12 @@ import movies from './data';
 
 function App() {
   return (
-  // reclama que body não pode ser uma child de uma div ... onde esta essa div?
-    <body>
-      <div className="App">
-        <Header />
-        <MovieList movies={movies} />
-      </div>
-    </body>
+    // reclama que body não pode ser uma child de uma div ... onde esta essa div?
+    // R: No ../pubic/index.html ele renderiza tudo que está nesse roots
+    <div className="App">
+      <Header />
+      <MovieList movies={movies} />
+    </div>
   );
 }
 export default App;

@@ -4,14 +4,19 @@ import Rating from './Rating.jsx';
 
 export default class MovieCard extends React.Component {
   render() {
-    return (
+    const prop = this.props;
+    const element = (
       <div className="movie-card">
-        <img src={this.props.imagePath} className="movie-card-image" alt={this.props.title} />
-        <h4 className="movie-card-title">{this.props.title}</h4>
-        <h5 className="movie-card-subtitle">{this.props.subtitle}</h5>
-        <p className="movie-card-storyline">{this.props.storyline}</p>
-        <div className="movie-card-rating"><Rating rating={this.props.rating} /></div>
+        <img src={prop.imagePath} className="movie-card-image" alt={prop.title} />
+        <div className="movie-card-budy">
+          <h4 className="movie-card-title">{prop.title}</h4>
+          <h5 className="movie-card-subtitle">{prop.subtitle}</h5>
+          <p className="movie-card-storyline">{prop.storyline}</p>
+        </div>
+        <div className="movie-card-rating"><Rating rating={prop.rating} /></div>
       </div>
     );
+    return element;
   }
+    
 }

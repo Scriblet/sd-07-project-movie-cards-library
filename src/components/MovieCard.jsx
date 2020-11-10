@@ -4,7 +4,7 @@ import React from 'react';
 class MovieCard extends React.Component {
   render() {
     return (
-      <p>p from MovieCard</p>
+      <div></div>
     );
   }
 }

@@ -4,7 +4,7 @@ import Rating from './Rating.jsx';
 export default class MovieCard extends React.Component {
   render() {
     const properties = this.props;
-    const { imagePath, title, subtitle, storyline, rating} = properties.prop;
+    const { imagePath, title, subtitle, storyline, rating } = properties.prop;
     return (
       <div className="movie-card">
         <img src={imagePath} className="movie-card-image" alt={title} />

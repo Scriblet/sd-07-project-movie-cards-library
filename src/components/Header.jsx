@@ -5,7 +5,7 @@ class Header extends Component {
     return (
       <header>
       Esse é o Header da página!
-        <h1>Movie Cards Library</h1>
+        <h1 className="title">Movie Cards Library</h1>
       </header>
     );
   }

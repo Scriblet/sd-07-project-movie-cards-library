@@ -7,7 +7,7 @@ import movies from './data';
 const App = () => (
   <div className="App">
     <Header/>
-    <MovieList prop={movies}/>
+    <MovieList prop={ movies }/>
   </div>
 );
 

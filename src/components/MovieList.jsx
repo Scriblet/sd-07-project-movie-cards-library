@@ -13,7 +13,5 @@ class MovieList extends Component {
     );
   }
 }
-MovieList.defaultProps = {
-  movies: PropTypes.arrayOf(PropTypes.object)
-}
+MovieList.defaultProps = { movies: PropTypes.arrayOf(PropTypes.object), };
 export default MovieList;

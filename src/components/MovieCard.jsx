@@ -1,8 +1,8 @@
 // implement MovieCard component here
-import Rating from "./Rating";
-import "../App.css";
-import React from "react";
-import PropTypes from "prop-types";
+import Rating from './Rating';
+import '../App.css';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
 	render() {

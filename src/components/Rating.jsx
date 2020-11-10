@@ -5,21 +5,17 @@ import '../App.css';
 
 class Rating extends React.Component {
   render() {
-    const rank = this.props;
+    const { rating } = this.props;
     return (
       <div className="rating">
-        <p>{rank.rating}</p>
+        <p>{rating}</p>
       </div>
     );
   }
 }
 
-Rating.propTypes = {
-  rating: PropTypes.number,
-};
+Rating.propTypes = { rating: PropTypes.number };
 
-Rating.defaultProps = {
-  rating: 'number',
-};
+Rating.defaultProps = { rating: 0 };
 
 export default Rating;

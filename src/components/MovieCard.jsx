@@ -27,7 +27,7 @@ MovieCard.propTypes = {
     storyline: PropTypes.string.isRequired,
     imagePath: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
-  }),
+  }).isRequired,
 };
 
 MovieCard.defaultProps = {

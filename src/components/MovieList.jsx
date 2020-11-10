@@ -3,11 +3,11 @@ import MovieCard from './MovieCard.jsx';
 
 export default class MovieList extends React.Component {
   getMovies() {
-    return this.props.children.map(movie => <MovieCard>{movie}</MovieCard>)
+    return this.props.prop.map(movie => <MovieCard prop={movie}/>)
   }
   render() {
     return <section  className='movie-list'>
-      {this.getMovies()}
+      { this.getMovies() }
     </section>
   }
 }

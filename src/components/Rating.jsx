@@ -15,7 +15,7 @@ import '../App.css';
 }
 
 Rating.propTypes = {
-  rank: PropTypes.objectOf(PropTypes.shape({
+  rank: PropTypes.arrayOf(PropTypes.shape({
     rating: PropTypes.number,
   })),
 };

@@ -7,13 +7,9 @@ import MovieCard from './MovieCard';
 class MovieList extends React.Component {
   render() {
     const { movies } = data;
-    return(
-    <div>
-      {
-        movies.map(item => <MovieCard />)
-      }
-    </div>
-    )
+    return (
+      <div>Test - MovieList file</div>
+    );
   }
 }
 

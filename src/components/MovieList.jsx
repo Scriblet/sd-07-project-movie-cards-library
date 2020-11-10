@@ -14,7 +14,7 @@ class MovieList extends React.Component {
           how the code knows that), the .map() high order function can be
           used to create multiple child components, in this case, multiple
           MovieCard components. */}
-        {movies.map(movie => <MovieCard key={movie.title} movie={movie}/>)}
+        {movies.map((movie) => <MovieCard key={movie.title} movie={movie} />)}
       </div>
     );
   }

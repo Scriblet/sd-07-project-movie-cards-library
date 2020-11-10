@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="App">
       <div>
-        <Header/>
+        <Header />
         {/* The 'movies' props given to the MovieList component gets its
         information from the data imported at the beginning of the file.
         It's used internally in the MovieList component file. */}
-        <MovieList movies={data}/>
+        <MovieList movies={data} />
       </div>
     </div>
   );

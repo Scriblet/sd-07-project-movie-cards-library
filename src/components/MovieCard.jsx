@@ -19,6 +19,4 @@ export default class MovieCard extends React.Component {
   }
 }
 
-MovieCard.propTypes = {
-  imagePath: PropTypes.string
-};
+MovieCard.propTypes = { imagePath: PropTypes.string.isRequired, };

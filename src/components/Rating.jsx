@@ -7,6 +7,4 @@ export default class Rating extends React.Component {
     return <span className="rating">{ properties.rating }</span>;
   }
 }
-Rating.propTypes = {
-  rating: PropTypes.string
-};
+Rating.propTypes = { rating: PropTypes.string.isRequired, };

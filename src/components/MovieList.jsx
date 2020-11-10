@@ -4,8 +4,8 @@ import MovieCard from './MovieCard';
 import '../App.css';
 
 const MovieList = (props) => {
-  const p = props;
-  const movies = p.movies;
+  const movies = props.movies;
+//   console.log(movies);
   return (
     <div className="movie-list">
       {movies.map((movie) => <MovieCard key={movie.title} movie={movie} />)}
@@ -13,6 +13,6 @@ const MovieList = (props) => {
   );
 };
 
-MovieList.PropTypes = { movies: PropTypes.arrayOf(PropTypes.object).isRequired };
+MovieList.propTypes = { movies: PropTypes.arrayOf(PropTypes.object).isRequired };
 
 export default MovieList;

@@ -21,7 +21,7 @@ const MovieCard = (props) => {
   );
 };
 
-MovieCard.PropTypes = {
+MovieCard.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   storyline: PropTypes.string.isRequired,

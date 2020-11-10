@@ -4,6 +4,6 @@ import '../App.css';
 
 const Rating = (prop) => <span className="rating">{prop.rating}</span>;
 
-Rating.PropTypes = { prop: PropTypes.number.isRequired };
+Rating.propTypes = { prop: PropTypes.number.isRequired };
 
 export default Rating;

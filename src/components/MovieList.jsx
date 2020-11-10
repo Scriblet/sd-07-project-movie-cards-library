@@ -1,15 +1,15 @@
 import React from 'react';
 import MovieCard from './MovieCard';
 
-class Pokedex extends React.Component {
+class MovieList extends React.Component {
   render() {
     const movieList = this.props.movies;
     return (
       <div className="movie-list">
-        {movieList.map(movie => <MovieCard key={movie.title} movies={movie} />)}
+        {movieList.map(movie => <MovieCard key={movie.title} movie={movie} />)}
       </div>
     );
   }
 }
 
-export default Pokedex;
+export default MovieList;

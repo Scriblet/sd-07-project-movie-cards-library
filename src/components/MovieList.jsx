@@ -3,8 +3,9 @@ import MovieCard from './MovieCard.jsx';
 
 export default class MovieList extends React.Component {
   render() {
+    const properties = this.props;
     return (<section className="movie-list">
-      { this['props'].prop.map((movie) => (<MovieCard prop={movie} />)) }
+      { properties.prop.map((movie) => (<MovieCard prop={movie} />)) }
     </section>);
   }
 }

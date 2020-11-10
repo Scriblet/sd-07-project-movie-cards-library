@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../App.css';
 
-class Rating extends React.Component {
+  class Rating extends React.Component {
   render() {
     const rank = this.props;
     return (
@@ -15,14 +15,14 @@ class Rating extends React.Component {
 }
 
 Rating.propTypes = {
-  rank: PropTypes.shape({
-    rating: PropTypes.string.isRequired,
-  })
+  rank: PropTypes.objectOf(PropTypes.shape({
+    rating: PropTypes.number,
+  })),
 };
 
 Rating.defaultProps = {
   rank: {},
   rating: 'number',
-}
+};
 
 export default Rating;

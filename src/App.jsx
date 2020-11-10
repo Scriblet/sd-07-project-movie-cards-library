@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       {/* Sua implementação deve ficar aqui. Remova essas duas linhas e mão na massa */}
-      <Header/>
-      <MovieList movies={movies}/>
+      <Header />
+      <MovieList movies={movies} />
     </div>
   );
 }

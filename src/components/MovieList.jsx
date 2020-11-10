@@ -9,8 +9,8 @@ class MovieList extends Component {
     return (
       <main>
         <div>
-          { movies.map((item, index, movies) => < MovieCard
-            key={movies.toString()} movie={item} />)
+          { movies.map((item, index, array) => < MovieCard
+            key={array.toString()} movie={item} />)
           }
         </div>
       </main>

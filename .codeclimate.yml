@@ -35,6 +35,7 @@ exclude_patterns:
 - "src/serviceWorker.js"
 - "src/index.css"
 - "**/node_modules/"
+- "**/cypress/"
 plugins:
   csslint:
     enabled: true

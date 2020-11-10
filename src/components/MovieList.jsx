@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
@@ -10,5 +11,9 @@ class MovieList extends React.Component {
     );
   }
 }
+
+// https://pt-br.reactjs.org/docs/typechecking-with-proptypes.html
+// oneOfType: an object that could be one of many types
+MovieList.propTypes = { movies: PropTypes.oneOfType.isRequired };
 
 export default MovieList;

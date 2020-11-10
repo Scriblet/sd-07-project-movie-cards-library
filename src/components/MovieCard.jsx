@@ -24,7 +24,7 @@ MovieCard.propTypes = {
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
     rating: PropTypes.number,
-  })
+  }),
 };
 
 MovieCard.defaultProps = {

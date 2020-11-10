@@ -16,6 +16,6 @@ class MovieList extends Component {
   }
 }
 
-MovieList.propTypes = { movies: PropTypes.array };
+MovieList.propTypes = { movies: PropTypes.shape() };
 
 export default MovieList;

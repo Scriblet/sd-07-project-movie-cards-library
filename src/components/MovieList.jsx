@@ -8,7 +8,7 @@ class MovieList extends Component {
     const movies = this.props.movies;
     return (
       <main>
-        <div>{ movies.map((item, i, arr) => < MovieCard key={arr.toString()} movie={item} />) }</div>
+        <div>{ movies.map((it, i, ar) => < MovieCard key={ar.toString()} movie={it} />) }</div>
       </main>
     );
   }

@@ -3,8 +3,9 @@ import React from 'react';
 import Rating from './Rating.jsx';
 
 export default class MovieCard extends React.Component {
+  generatorCard(prop) {}
   render() {
-    const prop = this.props;
+    let prop = this.props;
     return (
       <div className="movie-card">
         <img src={prop.imagePath} className="movie-card-image" alt={prop.title} />

@@ -3,10 +3,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Ratings(props) {
-  const value = props.rating;
+  const rating = props.rating;
   return (
-    <div key={value.toString()} className="rating">
-      <strong>{ value }</strong>
+    <div key={rating.toString()} className="rating">
+      <strong>{ rating }</strong>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 import '../App.css';
 
@@ -11,5 +12,7 @@ const MovieList = (props) => {
     </div>
   );
 };
+
+MovieList.PropTypes = { movies: PropTypes.arrayOf(PropTypes.object).isRequired };
 
 export default MovieList;

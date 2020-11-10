@@ -1,12 +1,16 @@
 // implement Header component here 
 import React from 'react'
 
-class HeaderClass extends React.Component {
+class Header extends React.Component {
   render() {
     return (
-      <header>Header</header>
+      <header>
+        <h1>
+          Movie Cards Library
+        </h1>
+      </header>
     )
   }
 }
 
-export default HeaderClass
+export default Header

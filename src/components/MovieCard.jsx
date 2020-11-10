@@ -3,7 +3,6 @@ import React from 'react';
 import Rating from './Rating.jsx';
 
 export default class MovieCard extends React.Component {
-  generatorCard(prop) {}
   render() {
     let prop = this.props;
     return (

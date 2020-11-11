@@ -1,1 +1,1 @@
-// Iniciando o projeto 🚀
+// Iniciando o projeto 🚀 - Richard

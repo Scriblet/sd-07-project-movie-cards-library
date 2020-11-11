@@ -1,15 +1,14 @@
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
-
 class MovieList extends React.Component {
   render() {
-    const { arrayMovies } = this.props.movies;
+    const moviesArray = this.props.movies;
+
     return (
       <div className="movie-list">
-        { arrayMovies.map((element) => <MovieCard key={element.title} movie={element} />) }
+        { moviesArray.map((element) => <MovieCard key={element.title} movie={element} />) }
       </div>
     );
   }

@@ -5,8 +5,8 @@ export default class MovieList extends React.Component {
   render() {
     const properties = this.props;
     return (<section className="movie-list">
-      { properties.movies.map((movie) => (
-        <MovieCard key={movie.title} {...movie} />
+      { properties.movies.map((element) => (
+        <MovieCard key={element.title} movie={element} />
       )) }
     </section>);
   }

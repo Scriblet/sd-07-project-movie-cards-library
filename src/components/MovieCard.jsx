@@ -4,6 +4,7 @@ import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
+
     const movie = this.props.movie;
     console.log(movie)
     return (
@@ -16,6 +17,15 @@ class MovieCard extends React.Component {
       </div>
     );
   }
+  // MovieCard.propTypes = {
+  //   movie: Proptypes.arrayOf(PropTypes.shape({
+  //     title: PropTypes.string,
+  //     subtitle: PropTypes.string,
+  //     storyline: PropTypes.string,
+  //     rating: PropTypes.number,
+  //     imagePath: PropTypes.string,
+  //   })).isRequired
+  // }
 }
 
 export default MovieCard;

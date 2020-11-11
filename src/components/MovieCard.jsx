@@ -5,21 +5,24 @@ class MovieCard extends React.Component {
   render() {
     const { title, subtitle, storyline, imagePath /* , rating */ } = this.props.movie;
     return (
-      <div>
+      <section>
         <img src={imagePath} alt="" />;
-        <h4>{title}</h4>;
-        <h5>{subtitle}</h5>;
-        <p>{storyline}</p>;
-      </div>
+        <div>
+          <h4>{title}</h4>;
+          <h5>{subtitle}</h5>;
+          <p>{storyline}</p>;
+        </div>
+      </section>
     );
   }
 }
 
 MovieCard.protoType = {
-  movies: PropTypes.shape({
+  movie: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
+    imagePath: PropTypes.string,
   }),
 };
 

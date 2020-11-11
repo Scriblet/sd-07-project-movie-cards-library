@@ -13,7 +13,7 @@ class MovieList extends React.Component {
     );
   }
   MovieList.propTypes = {
-    movie: PropTypes.shape({
+    movies: PropTypes.shape({
       title: PropTypes.string,
       subtitle: PropTypes.string,
       storyline: PropTypes.string,

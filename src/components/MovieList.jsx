@@ -8,7 +8,7 @@ class MovieList extends Component {
     const movies = this.props.movies;
 
     return (
-      <div>
+      <div className="movie-list">
         {movies.map((movie) => <MovieCard key={movie.title} movie={movie} />,
         )}
       </div>
@@ -16,6 +16,6 @@ class MovieList extends Component {
   }
 }
 
-MovieList.propTypes = { movies: PropTypes.shape().isRequired };
+MovieList.propTypes = { movies: PropTypes.shape({ map: PropTypes.func }).isRequired };
 
 export default MovieList;

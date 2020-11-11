@@ -13,13 +13,15 @@ class MovieCard extends React.Component {
           <h5 className="movie-card-subtitle">{prop.movie.subtitle}</h5>
           <p className="movie-card-storyline">{prop.movie.storyline}</p>
         </div>
-        <div className="movie-card-rating"><Rating rating={prop.movie.rating} className="rating"/></div>
+        <div className="movie-card-rating">
+          <Rating rating={prop.movie.rating} className="rating" />
+        </div>
       </div>
     );
   }
 }
 
-/*MovieCard.propTypes = {
+/* MovieCard.propTypes = {
   movie: {
     imagePath: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,

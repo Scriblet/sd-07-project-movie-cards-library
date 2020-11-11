@@ -13,7 +13,7 @@ const movies = [
   {
     title: 'Movie Title 1',
     subtitle: 'Movie Subtitle 1',
-    storyline: 'Movie Storyline 1',
+    storyline: ' Movie Storyline 1 ',
     rating: 4.5,
     imagePath: 'images/movie_1',
   },

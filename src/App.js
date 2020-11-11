@@ -14,3 +14,7 @@ function App() {
 }
 
 export default App;
+
+/* App é o arquivo pai de todos os arquivos, está no topo da árvore
+Ele recebe os Compenentes e seus respectivos retornos,
+mas também envia informações como no movie={Data} */

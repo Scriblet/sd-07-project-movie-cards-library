@@ -35,8 +35,14 @@ MovieCard.defaultProps = {
     title: 'no title',
     subtitle: 'no subtitle',
     storyline: 'no storyline',
-    rating: '0.0',
+    rating: 0.0,
   },
 };
 
 export default MovieCard;
+
+/* MovieCard é filho de MovieList e recebeu dados dele através do map
+os dados recebidos foram desestruturados e apresentado
+MovieCard recebe a estrutura do Rating (logo é pai dele)
+e coloca o dado recebido pelo MovieList
+Seu propTypes é o mais completo. Proptypes.default serve para colocar um valor padrão */

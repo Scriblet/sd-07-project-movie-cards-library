@@ -17,3 +17,7 @@ class MovieList extends React.Component {
 MovieList.propTypes = { movies: PropTypes.arrayOf(PropTypes.object).isRequired };
 
 export default MovieList;
+
+/* App que é o pai, mandou para o filho MovieList dados através do movies={Data}
+aqui o array de objetos entrou no map, onde cada um dos seus dados foi enviado para o MovirCard
+Ou seja, MovieList é pai de MovieCard */

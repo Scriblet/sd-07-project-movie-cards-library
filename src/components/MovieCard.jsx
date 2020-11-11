@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-// import movies from '../data';
+import Rating from './Rating';
 
 class MovieCard extends Component {
   render() {
@@ -10,23 +10,23 @@ class MovieCard extends Component {
       subtitle,
       storyline,
       rating,
-    } = this.props.movieCard;
+    } = this.props.movie;
     return (
-      <div className="movieCard">
+      <div className="movie-card">
         <img src={imagePath} alt={title} />
         <div>
-          <h2>{title}</h2>
-          <h3>{subtitle}</h3>
+          <h4>{title}</h4>
+          <h5>{subtitle}</h5>
           <p>{storyline}</p>
         </div>
-        <div>Rating: {rating}</div>
+        <Rating rating={rating} />
       </div>
     );
   }
 }
 
 MovieCard.propTypes = {
-  movieCard: PropTypes.shape({
+  movie: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
